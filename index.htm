@@ -93,6 +93,13 @@
       text-align: center;
       margin-top: 20px;
     }
+    
+    @media print {
+    #downloadButton {
+        display: none;
+    }
+}
+
 
     @media (max-width: 480px) {
       h1 {
@@ -263,9 +270,7 @@
     </div>
 
     <div class="footer">
-      <!--<a href="resume-sairam.pdf" download class="download-button">
-        Download PDF
-      </a>-->
+    <button id="downloadButton"><a href="download/sairam-resume.pdf">Download</button>
     </div>
   </div>
 
