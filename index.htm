@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>S SAIRAM - Resume</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Gruppo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Gruppo', cursive;
+      color: #2c3e50;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #2c3e50;
+      padding-bottom: 5px;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      margin: 5px 0;
+    }
+
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f4f4f4;
+      font-weight: 500;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .photo img {
+      border-radius: 0%;
+      border: 1px solid #2c3e50;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .download-button {
+      text-decoration: none;
+      color: #fff;
+      background-color: #3498db;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-button:hover {
+      background-color: #2980b9;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .photo img {
+        width: 100px;
+        height: 100px;
+      }
+
+      table, th, td {
+        display: block;
+      }
+
+      th {
+        display: none;
+      }
+
+      td {
+        padding: 8px;
+        border-bottom: none;
+      }
+
+      td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+      }
+    }
+  </style>
+</head>
+
+<body onload="getCurrentDate()">
+  <div class="container">
+    <div style="display: flex; align-items: center; gap: 20px;">
+      <div style="flex: 1;">
+        <h1>S SAIRAM</h1>
+        <h3>
+          <a href="https://goo.gl/maps/4z6S26Mk2jEi6Zxk9">Patancheru, Telangana, India</a>
+        </h3>
+        <h3>
+          <a href="tel:+919618058196">+91 9618058196</a>
+        </h3>
+        <h3>
+          <a href="mailto:ssairam.pro@gmail.com">ssairam.pro@gmail.com</a>
+        </h3>
+      </div>
+      <div class="photo">
+        <img src="sairam.jpg" alt="Sairam's photo" width="150" height="150">
+      </div>
+    </div>
+
+    <h2>Professional Summary</h2>
+    <p>Motivated mechanical engineering graduate dedicated to using technical skills to drive innovation, reduce task time, and boost productivity.</p>
+
+    <h2>Experience</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Role and Responsibilities</th>
+          <th>Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Company">TURBO TECH</td>
+          <td data-label="Role and Responsibilities">
+            <ul>
+              <li>Developed detailed engineering drawings using CAD software.</li>
+              <li>Conducted research and analysis for design projects.</li>
+              <li>Performed simulations to meet safety and performance requirements.</li>
+              <li>Supported design documentation and manufacturing issue resolution.</li>
+              <li>Enhanced processes through continuous improvement initiatives.</li>
+            </ul>
+          </td>
+          <td data-label="Duration">16/09/2019 to 02/06/2023</td>
+        </tr>
+        <tr>
+          <td data-label="Company">VELJAN</td>
+          <td data-label="Role and Responsibilities">
+            <ul>
+              <li>Designed hydraulic cylinders adhering to ISO-6020 Compact Tie-Rod Design series standards.</li>
+              <li>Documented and updated technical data using Oracle Server.</li>
+              <li>Collaborated with cross-functional teams to optimize design efficiency.</li>
+              <li>Ensured compliance with safety and manufacturing standards.</li>
+            </ul>
+          </td>
+          <td data-label="Duration">08/09/2023 to 10/09/2024</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Education</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Qualification</th>
+          <th>School/College</th>
+          <th>Percentage</th>
+          <th>Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Qualification">M.Tech</td>
+          <td data-label="School/College">BVRIT (JNTUH)</td>
+          <td data-label="Percentage">87.3%</td>
+          <td data-label="Duration">2017 - 2019</td>
+        </tr>
+        <tr>
+          <td data-label="Qualification">B.Tech</td>
+          <td data-label="School/College">Ellenki College (JNTUH)</td>
+          <td data-label="Percentage">62.38%</td>
+          <td data-label="Duration">2013 - 2017</td>
+        </tr>
+        <tr>
+          <td data-label="Qualification">INTERMEDIATE</td>
+          <td data-label="School/College">Sri Veda Junior College</td>
+          <td data-label="Percentage">69.1%</td>
+          <td data-label="Duration">2011 - 2013</td>
+        </tr>
+        <tr>
+          <td data-label="Qualification">SSC</td>
+          <td data-label="School/College">Zilla Parishad Boys High School</td>
+          <td data-label="Percentage">65.1%</td>
+          <td data-label="Duration">2010 - 2011</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Skills</h2>
+    <ul>
+      <li>Proficient in AutoCAD and SolidWorks for 2D/3D design.</li>
+      <li>Experienced in HTML, CSS, JavaScript</li>
+      <li>Strong knowledge of engineering principles and manufacturing processes.</li>
+      <li>Expert in Microsoft Excel and Word for professional documentation.</li>
+      <li>Excellent problem-solving and analytical abilities.</li>
+      <li>Effective communication and teamwork skills.</li>
+    </ul>
+
+    <h2>Hobbies</h2>
+    <ul>
+      <li>Drawing and creative arts.</li>
+      <li>Reading Telugu storybooks.</li>
+<li> Visit my blog to read my latest posts: <a href="https://ssairam18.blogspot.com/" target="_blank">https://ssairam18.blogspot.com/</a> </li>
+      <li>Listening to music and exploring self-learning e-courses.</li>
+    </ul>
+
+    <h2>Personal Details</h2>
+    <table>
+      <tbody>
+        <tr>
+          <td data-label="Name">Name</td>
+          <td data-label="Value">Surya Sairam</td>
+        </tr>
+        <tr>
+          <td data-label="Date of Birth">Date of Birth</td>
+          <td data-label="Value">21/06/1996</td>
+        </tr>
+        <tr>
+          <td data-label="Languages">Languages</td>
+          <td data-label="Value">Telugu, English</td>
+        </tr>
+        <tr>
+          <td data-label="Address">Address</td>
+          <td data-label="Value">H.No.12-39/1, Srinivasam, Patancheru, Telangana, India</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Declaration</h2>
+    <p>I hereby declare that the information provided is true to the best of my knowledge.</p>
+    <div style="text-align: left;">
+      <p><b>Place:</b> Patancheru</p>
+      <p><b>Date:</b> <span class="date"></span></p>
+    </div>
+
+    <div class="footer">
+      <!--<a href="resume-sairam.pdf" download class="download-button">
+        Download PDF
+      </a>-->
+    </div>
+  </div>
+
+  <script>
+    function getCurrentDate() {
+      const currentDate = new Date();
+      const day = String(currentDate.getDate()).padStart(2, '0');
+      const month = String(currentDate.getMonth() + 1).padStart(2, '0');
+      const year = currentDate.getFullYear();
+      document.querySelectorAll('.date').forEach(el => el.textContent = `${day}/${month}/${year}`);
+    }
+  </script>
+</body>
+
+</html>
